@@ -24,11 +24,11 @@ print(my_tuple[2][1])
 
 # place these numbers in separate variables from the tuple below
 t = (1, 2, 3)
-x,y,z = t
-print(x,y,z)
+x, y, z = t
+print(x, y, z)
 #get me the length of the above tuple --- there are two ways of doing this... len(), count()...  use count if you want to get how many times an item appears in a tuple
 print(len(my_tuple))
-my_tuple3 = (1,2,3,3,4,5,6,7,7,7,8,9,10)
+my_tuple3 = (1, 2, 3, 3, 4, 5, 6, 7, 7, 7, 8, 9, 10)
 print(my_tuple3.count(7))
 my_tuple4 = ("a", "a", "a", "b", "b")
 print(my_tuple4.count(""))
@@ -43,10 +43,9 @@ print(my_list)
 #Extract the elements of the following tuple into four variables: a, b, c, d
 
 my_tuple = (1, 2, 3, 4)
-a,b,c,d = my_tuple
-print(a,b,c,d)
+a, b, c, d = my_tuple
+print(a, b, c, d)
 #################################################sets######################################################
-
 
 # Join the following sets into one, called my_set_3:
 
@@ -54,23 +53,22 @@ print(a,b,c,d)
 
 {"three", 4, 5}
 
-
 # Remove a random item from the following set, using set methods.
-# sets are a mutable data structure 
+# sets are a mutable data structure
 # for storing information whose elements
 # that do not repeat
 # first way to create a set
-set1= set((1,1,1,2,3,4))
+set1 = set((1, 1, 1, 2, 3, 4))
 print(set1)
 # second way to create a set
-set2= {1,2,3,4,4,4,4,4,4,5}
+set2 = {1, 2, 3, 4, 4, 4, 4, 4, 4, 5}
 # how to find an element in sets
 print(3 in set2)
 print(5 in set1)
 # Join the following stes into one
-set0 = {1,2, "three", "four"}
-set01 = {"three",4,5}
-set3= set0.union(set01)
+set0 = {1, 2, "three", "four"}
+set01 = {"three", 4, 5}
+set3 = set0.union(set01)
 print(set3)
 raffle = {"Rachel", "Monica", "Phoebe", "Joey", "Chandler", "Ross"}
 raffle.remove("Rachel")
@@ -79,8 +77,6 @@ raffle.add("DeMarcus")
 raffle.add("Cash")
 raffle.add("jaquavion")
 print(raffle)
-
-
 
 # Add the name Gunther to the following set, using set methods:
 
@@ -100,21 +96,21 @@ print(my_bool)
 # != different or not equal to
 
 # you can also construct booleans to see if values ar in a variable or not found
-my_list = [1,2,3,4,5]
+my_list = [1, 2, 3, 4, 5]
 my_bool = 5 in my_list
 my_bool = 5 not in my_list
 
 my_num = 54
-my_num2= 2223
+my_num2 = 2223
 my_result = my_num2 == my_num
 print(my_result)
 # so we can see if we can make logical decisions if something is true or not
 var1 = True
 var2 = False
-print(type(var1)) # type prints out data type
+print(type(var1))  # type prints out data type
 print(var1)
 
-list = [1,2,3,4,5,6]
+list = [1, 2, 3, 4, 5, 6]
 control = 5 in list
 print(type(control))
 print(control)
@@ -123,27 +119,38 @@ print(control)
 
 # Make a comparison that returns a boolean and store the result (True/False) in a variable called test
 
-# Check if 17834/34 is greater than 87*56 and print the boolean result to the screen using print() 
-num1 = 17834/34
-num2 = 87*56
+# Check if 17834/34 is greater than 87*56 and print the boolean result to the screen using print()
+num1 = 17834 / 34
+num2 = 87 * 56
 my_bool = num1 > num2
 print(my_bool)
 
 # Check if the square root of 25 is equal to 5 and display the result (boolean) on the screen using print
-
-
 
 #############################################next week ################################################
 #dictionaries and  sets
 
 # dictionaries
 # another data structure that stores data that can be unstructured
-# employee = {'first_name': 'steven',
-#             'last_name': 'pretti',
-#              'weight': 37.2,
-#               'size': 5.77
-#              'height:' 6}
-# print(employee['weight'])
+employee = {
+    'first_name': 'steven',
+    'last_name': 'pretti',
+    'weight': 37.2,
+    'size': 5.77,
+    'height': 6
+}
+print(employee['weight'])
+print(employee['height'])
+
+warrior = {
+    'made_by': 'hbomax',
+    'release_date': 2018,
+    'budget': '24million',
+    'rotton_tomatoes_score': 'fresh'
+}
+warrior['score '] = 78
+print(warrior['release_date'])
+print(warrior.items())
 
 #challenge 1
 # Create a dictionary called my_dict that stores the following information about a person:
@@ -152,7 +159,13 @@ print(my_bool)
 # age: 35
 # occupation: Journalist
 # The names of the keys and values must be equal to the ones indicated above.
-
+my_dict = {
+    'name': 'Karen',
+    'surname': 'Jurgens',
+    'age': 35,
+    'occupation': 'Journalist'
+}
+print(my_dict.items())
 #challenge 2:
 # Use print to returns the second item of the list called points2, inside the following dictionary.
 
