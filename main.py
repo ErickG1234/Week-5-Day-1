@@ -56,8 +56,29 @@ print(a,b,c,d)
 
 
 # Remove a random item from the following set, using set methods.
-
+# sets are a mutable data structure 
+# for storing information whose elements
+# that do not repeat
+# first way to create a set
+set1= set((1,1,1,2,3,4))
+print(set1)
+# second way to create a set
+set2= {1,2,3,4,4,4,4,4,4,5}
+# how to find an element in sets
+print(3 in set2)
+print(5 in set1)
+# Join the following stes into one
+set0 = {1,2, "three", "four"}
+set01 = {"three",4,5}
+set3= set0.union(set01)
+print(set3)
 raffle = {"Rachel", "Monica", "Phoebe", "Joey", "Chandler", "Ross"}
+raffle.remove("Rachel")
+print(raffle)
+raffle.add("DeMarcus")
+raffle.add("Cash")
+raffle.add("jaquavion")
+print(raffle)
 
 
 
